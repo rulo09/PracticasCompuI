@@ -1,4 +1,4 @@
-﻿﻿#include <iostream>
+﻿#include <iostream>
 #include <array>
 
 // Añadir std para fácil llamado de funciones
@@ -80,7 +80,7 @@ No regresa ningún valor.
 template <typename matriz>
 void ImprimirSolucion(matriz & miMatriz)
 {
-    //TODO1
+
 }
 
 /*
@@ -90,5 +90,5 @@ No regresa ningún valor.
 template <typename matriz>
 void GaussJordan(matriz & miMatriz)
 {
-    //TODO1
+
 }
