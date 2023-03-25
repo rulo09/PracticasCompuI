@@ -1,3 +1,5 @@
 # ninja log v5
 1	842	7014726101567466	CMakeFiles/GaussJordan.dir/main.cpp.obj	54bcce7a710946ef
 844	976	7014726102853711	GaussJordan.exe	1350f7c9882a1bcd
+4	575	7014726855686304	CMakeFiles/GaussJordan.dir/main.cpp.obj	54bcce7a710946ef
+576	681	7014726856690331	GaussJordan.exe	1350f7c9882a1bcd
