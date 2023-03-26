@@ -32,6 +32,8 @@ int main()
     // Pedimos al usuario que llene la matriz
     LlenarMatriz(miMatriz);
 
+    ImprimirMatriz(miMatriz);
+
     // Aplicamos el método de Gauss-Jordan sobre nuestra matriz
     GaussJordan(miMatriz);
 
@@ -69,7 +71,7 @@ void ImprimirMatriz(matriz & miMatriz)
         cout << "[ ";
         for (int j = 0; j < variables + 1; j++)
             cout << miMatriz[i][j] << '\t';
-        cout << "]\n";
+        cout << "]\n\n";
     }
 }
 
@@ -81,6 +83,8 @@ template <typename matriz>
 void ImprimirSolucion(matriz & miMatriz)
 {
 
+    //TODO
+
 }
 
 /*
@@ -88,7 +92,17 @@ Implementa el algoritmo de Gauss-Jordan sobre 'miMatriz', finalizando en ella la
 No regresa ningún valor.
 */
 template <typename matriz>
-void GaussJordan(matriz & miMatriz)
-{
+void GaussJordan(matriz & miMatriz){
 
-}
+    int variables = miMatriz.size();
+    for (int i = 0; i < variables; i++) {
+        cout << "[ ";
+        for (int j = 0; j < variables + 1; j++)
+            cout << miMatriz[i][j] / miMatriz[0][0] << "\t";
+        cout << "]\n";
+    }
+
+        }
+
+
+
