@@ -93,12 +93,11 @@ No regresa ningún valor.
 */
 template <typename matriz>
 void GaussJordan(matriz & miMatriz){
-
     int variables = miMatriz.size();
     for (int i = 0; i < variables; i++) {
         cout << "[ ";
         for (int j = 0; j < variables + 1; j++)
-            cout << miMatriz[i][j] / miMatriz[0][0] << "\t";
+            cout << miMatriz[0][j] / miMatriz[0][0] << "\t";
         cout << "]\n";
     }
 
