@@ -29,11 +29,11 @@ int main()
 {
     // Definimos el número de variables de nuestro sistema
     const int variables = 3;
-    // El número de columnas será el número de variables más su solición para cada ecuación
+    // El número de columnas será el número de variables más su solución para cada ecuación
     const int columnas = variables + 1;
 
     // Inicializamos la matriz que vamos a ocupar
-    array <array<float, columnas>, variables> miMatriz = { 0 };
+    array<array<float, columnas>, variables> miMatriz = { 0 };
 
     // Pedimos al usuario que llene la matriz
     LlenarMatriz(miMatriz);
@@ -43,16 +43,12 @@ int main()
     // Aplicamos el método de Gauss-Jordan sobre nuestra matriz
     GaussJordan(miMatriz);
 
-
-    buscarPivote(miMatriz);
-
-    intercambiarFilas(miMatriz);
-
     // Imprimimos la solución de la matriz
     ImprimirSolucion(miMatriz);
 
     return 0; // Indicamos que salimos del programa con éxito
 }
+
 
 /*
 Llena 'miMatriz' con valores ingresados por el usuario para cada elemento.
@@ -100,8 +96,7 @@ void ImprimirSolucion(matriz & miMatriz)
 
 template <typename matriz>
 int buscarPivote(matriz &miMatriz, int fila, int numFilas){
-    int columna = fila;
-    int indicePivote = -1;
+    int columna = fila, indicePivote = -1;
 
     float max = miMatriz[fila][columna];
     for(int i = fila; i<numFilas; i++) {
@@ -110,6 +105,7 @@ int buscarPivote(matriz &miMatriz, int fila, int numFilas){
             indicePivote = i;
         }
     }
+    return indicePivote;
 }
 
 /*
@@ -132,7 +128,7 @@ void GaussJordan(matriz & miMatriz){
     for(int i = 0; i < filas; i ++){
         int indicePivote = buscarPivote(miMatriz, i, filas);
         if (indicePivote != -1){
-            intercambiarFilas((miMatriz, i, indicePivote, columnas);
+            intercambiarFilas(miMatriz, i, indicePivote, columnas);
         }
         else{
             cout<< "El sistema no tiene solución" << endl;
@@ -141,8 +137,8 @@ void GaussJordan(matriz & miMatriz){
 
     }
     for (int i = 0; i < filas; i++){
-        int valorPivote = miMatriz[0][0];
         miMatriz[0][columnas] /= miMatriz[0][0];
+        int valorPivote = miMatriz[0][0];
         if( i != 0) {
             miMatriz[filas][columnas] = miMatriz[filas][columnas] - (miMatriz[filas][columnas] * valorPivote);
 
