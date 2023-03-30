@@ -137,7 +137,7 @@ void GaussJordan(matriz & miMatriz){
         }
 
     }
-
+// PARA ELIMINAR LA PRIMERA COLUMNA ////////////////////////////////////////////////////////////
     for (int j = 0; j < columnas; j ++){
         valorPivote = miMatriz[0][0];// Declaramos el pivote como el valor 0,0 de la matriz
         miMatriz[0][j] /= valorPivote; //Dividimos la primer fila por el pivote
@@ -148,7 +148,7 @@ void GaussJordan(matriz & miMatriz){
             miMatriz[i][j] = miMatriz[i][j] - (miMatriz[i][j] * valorFila1);// Restamos el producto del primer elemento de la fila actual y la primera fila de la matriz
         }
     }
-
+// PARA ELIMINAR LA SEGUNDA COLUMNA /////////////////////////
     for (int j = 0; j < columnas; j ++){
         valorPivote = miMatriz[2][1];// Declaramos el pivote como el valor 2 de la ultima fila de la matriz
         miMatriz[2][j] /= valorPivote;  //DIvidimos la ultima fila entre el pivote
@@ -164,7 +164,23 @@ void GaussJordan(matriz & miMatriz){
             miMatriz[i][j] = miMatriz[i][j] - (miMatriz[i][j] * valorFila1);// Restamos el producto del primer elemento de la fila actual y la primera fila de la matriz
         }
     }
+    // PARA ELIMINAR LA TERCER COLUMNA //////////////////////////////////////
+    for (int j = 0; j < columnas; j ++){
+        valorPivote = miMatriz[1][2];// Declaramos el pivote como el valor 2 de la ultima fila de la matriz
+        miMatriz[1][j] /= valorPivote;  //DIvidimos la ultima fila entre el pivote
+    }
 
+    for(int j = 0; j < columnas; j++){
+        int temp = miMatriz[0][j];
+        miMatriz[0][j] = miMatriz[1][j];
+        miMatriz[1][j] = temp;
+    }
+    for (int i = 1; i < filas; i++) { // Iteramos sobre cada fila excepto la primera
+        for (int j = 0; j < columnas; j++) { // Iteramos sobre las columna
+            double valorFila1 = miMatriz[0][j]; // Obtenemos el primer elemento de la fila actual
+            miMatriz[i][j] = miMatriz[i][j] - (miMatriz[i][j] * valorFila1);// Restamos el producto del primer elemento de la fila actual y la primera fila de la matriz
+        }
+    }
 
 
     for (int i = 0; i < filas; i++) {
