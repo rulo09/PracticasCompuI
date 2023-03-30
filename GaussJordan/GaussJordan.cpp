@@ -80,6 +80,7 @@ void ImprimirMatriz(matriz & miMatriz)
             cout << miMatriz[i][j] << '\t';
         cout << "]\n\n";
     }
+    cout << endl;
 }
 
 /*
@@ -90,7 +91,6 @@ template <typename matriz>
 void ImprimirSolucion(matriz & miMatriz)
 {
 
-    //TODO
 
 }
 
@@ -113,8 +113,8 @@ Implementa el algoritmo de Gauss-Jordan sobre 'miMatriz', finalizando en ella la
 No regresa ningún valor.
 */
 template<typename matriz>
-void intercambiarFilas(matriz &miMatriz, int fila1, int fila2, int cols){
-    for(int j = 0; j < cols; j++){
+void intercambiarFilas(matriz &miMatriz, int fila1, int fila2, int columnas){
+    for(int j = 0; j < columnas; j++){
         int temp = miMatriz[fila1][j];
         miMatriz[fila1][j] = miMatriz[fila2][j];
         miMatriz[fila2][j] = temp;
@@ -124,6 +124,7 @@ void intercambiarFilas(matriz &miMatriz, int fila1, int fila2, int cols){
 template <typename matriz>
 void GaussJordan(matriz & miMatriz){
     int filas =miMatriz.size(), columnas = miMatriz.size() +1;
+    double valorPivote;
 
     for(int i = 0; i < filas; i ++){
         int indicePivote = buscarPivote(miMatriz, i, filas);
@@ -137,16 +138,24 @@ void GaussJordan(matriz & miMatriz){
 
     }
     for (int i = 0; i < filas; i++){
-        miMatriz[0][columnas] /= miMatriz[0][0];
-        int valorPivote = miMatriz[0][0];
-        if( i != 0) {
-            miMatriz[filas][columnas] = miMatriz[filas][columnas] - (miMatriz[filas][columnas] * valorPivote);
-
-            }
+        valorPivote = miMatriz[i][i]; // Declaramos el pivote como el valor 0,0 de la matriz
+        for (int j = i; j < columnas; j ++){
+            miMatriz[i][j] /= valorPivote;
         }
 
+    }
+    for (int i = 0; i < filas; i++) {
+        cout << "[ ";
+        for (int j = 0; j < filas + 1; j++)
+            cout << miMatriz[i][j] << '\t';
+        cout << "]\n\n";
+        }
 
     }
+
+
+
+
 
 
 
