@@ -143,9 +143,9 @@ void GaussJordan(matriz & miMatriz){
         miMatriz[0][j] /= valorPivote; //Dividimos la primer fila por el pivote
     }
     for (int i = 1; i < filas; i++) { // Iteramos sobre cada fila excepto la primera
-        double valorFila1 = miMatriz[i][0]; // Obtenemos el primer elemento de la fila actual
         for (int j = 0; j < columnas; j++) { // Iteramos sobre las columna
-            miMatriz[i][j] -= valorFila1 * miMatriz[0][j]; // Restamos el producto del primer elemento de la fila actual y la primera fila de la matriz
+            double valorFila1 = miMatriz[0][j]; // Obtenemos el primer elemento de la fila actual
+            miMatriz[i][j] = miMatriz[i][j] - (miMatriz[i][j] * valorFila1);// Restamos el producto del primer elemento de la fila actual y la primera fila de la matriz
         }
     }
 
@@ -157,12 +157,7 @@ void GaussJordan(matriz & miMatriz){
         int temp = miMatriz[0][j];
         miMatriz[0][j] = miMatriz[2][j];
         miMatriz[2][j] = temp;
-    } // Intercambiamos la primer y la ultima fila
-
-
-
-
-
+    }
     for (int i = 0; i < filas; i++) {
         cout << "[ ";
         for (int j = 0; j < filas + 1; j++)
