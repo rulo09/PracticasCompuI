@@ -19,7 +19,7 @@ template <typename matriz>
 void ImprimirSolucion(matriz & miMatriz);
 
 template<typename matriz>
-int buscarPivote(matriz &miMatriz, int fila, int numFilas); // Nos permite localizar el número más grande y hacerlo elde la primera fila
+int buscarPivote(matriz &miMatriz, int fila, int numFilas); // Nos permite localizar el número más grande y hacerlo el de la primera fila
 
 template<typename matriz>
 void intercambiarFilas(matriz &miMatriz, int fila1, int fila2, int columnas);
@@ -138,12 +138,15 @@ void GaussJordan(matriz & miMatriz){
 
     }
     valorPivote = miMatriz[0][0];// Declaramos el pivote como el valor 0,0 de la matriz
-
-      for (int j = 0; j < columnas; j ++){
-          miMatriz[0][j] /= valorPivote; //Dividimos la primer fila por el pivote
-          // hacemos que las filas de abajo se resten por el producto de la fila de arriba y la fila actual
-
-      }
+    for (int j = 0; j < columnas; j ++){
+        miMatriz[0][j] /= valorPivote; //Dividimos la primer fila por el pivote
+    }
+    for (int i = 1; i < filas; i++) { // Iteramos sobre cada fila excepto la primera
+        double valorFila1 = miMatriz[i][0]; // Obtenemos el primer elemento de la fila actual
+        for (int j = 0; j < columnas; j++) { // Iteramos sobre las columna
+            miMatriz[i][j] -= valorFila1 * miMatriz[0][j]; // Restamos el producto del primer elemento de la fila actual y la primera fila de la matriz
+        }
+    }
 
 
 
