@@ -137,8 +137,9 @@ void GaussJordan(matriz & miMatriz){
         }
 
     }
-    valorPivote = miMatriz[0][0];// Declaramos el pivote como el valor 0,0 de la matriz
+
     for (int j = 0; j < columnas; j ++){
+        valorPivote = miMatriz[0][0];// Declaramos el pivote como el valor 0,0 de la matriz
         miMatriz[0][j] /= valorPivote; //Dividimos la primer fila por el pivote
     }
     for (int i = 1; i < filas; i++) { // Iteramos sobre cada fila excepto la primera
