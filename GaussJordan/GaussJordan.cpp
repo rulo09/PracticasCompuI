@@ -91,7 +91,7 @@ template <typename matriz>
 void ImprimirSolucion(matriz & miMatriz)
 {
 
-
+cout << "La solucion del sistema es \n" << "X = " << miMatriz[0][3] <<"\n Y = " << miMatriz[1][3] << "\n Z = " << miMatriz[2][3];
 }
 
 template <typename matriz>
