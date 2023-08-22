@@ -132,7 +132,7 @@ void GaussJordan(matriz & miMatriz){
             intercambiarFilas(miMatriz, i, indicePivote, columnas);
         }
         else{
-            cout<< "El sistema no tiene solución" << endl;
+            cout<< "El sistema no tiene solucion" << endl;
             exit(0);
         }
 

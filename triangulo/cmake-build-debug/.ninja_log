@@ -1,0 +1,13 @@
+# ninja log v5
+6	76	7143415704896350	CMakeFiles/triangulo.dir/triangulo.cpp.obj	9e512c87a1b95028
+1	289	7143415707030245	CMakeFiles/triangulo.dir/main.cpp.obj	45601e46eb6db2a
+290	423	7143415708313179	triangulo.exe	dc2b9b1880fa35ee
+8	262	7143423125265073	CMakeFiles/triangulo.dir/triangulo.cpp.obj	9e512c87a1b95028
+3	357	7143423126211656	CMakeFiles/triangulo.dir/main.cpp.obj	45601e46eb6db2a
+7	247	7143431111011738	CMakeFiles/triangulo.dir/triangulo.cpp.obj	9e512c87a1b95028
+2	316	7143431111689198	CMakeFiles/triangulo.dir/main.cpp.obj	45601e46eb6db2a
+316	418	7143431112662879	triangulo.exe	dc2b9b1880fa35ee
+8	248	7143688182026036	CMakeFiles/triangulo.dir/triangulo.cpp.obj	9e512c87a1b95028
+2	313	7143688182684142	CMakeFiles/triangulo.dir/main.cpp.obj	45601e46eb6db2a
+314	551	7143688184427672	triangulo.exe	dc2b9b1880fa35ee
+2	293	7143688677226098	CMakeFiles/triangulo.dir/main.cpp.obj	45601e46eb6db2a
