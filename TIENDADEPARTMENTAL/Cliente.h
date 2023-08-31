@@ -4,9 +4,13 @@
 
 #ifndef TIENDADEPARTMENTAL_CLIENTE_H
 #define TIENDADEPARTMENTAL_CLIENTE_H
+#include <string>
 
-
+using namespace std;
 class Cliente {
+private:
+    string name;
+    int IDCard[4];
 
 };
 

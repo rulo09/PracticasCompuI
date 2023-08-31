@@ -1,0 +1,7 @@
+# ninja log v5
+5	1018	7150343115301001	CMakeFiles/PolimorfismoFiguraGeometrica.dir/main.cpp.obj	634c496372d6ec30
+0	1153	7150343118331867	CMakeFiles/PolimorfismoFiguraGeometrica.dir/GeometricShape.cpp.obj	f26a74a06138c2a5
+17	563	7150351333145200	CMakeFiles/PolimorfismoFiguraGeometrica.dir/Square.cpp.obj	2056fb65a5954cd1
+9	582	7150351333336338	CMakeFiles/PolimorfismoFiguraGeometrica.dir/Triangle.cpp.obj	e855cc10dcc72d81
+3	656	7150351334093577	CMakeFiles/PolimorfismoFiguraGeometrica.dir/main.cpp.obj	634c496372d6ec30
+2	792	7150352272278639	CMakeFiles/PolimorfismoFiguraGeometrica.dir/Circle.cpp.obj	2446131102ce7e6f

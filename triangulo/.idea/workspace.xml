@@ -21,6 +21,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10ebb447-6a1b-414c-9d92-bf12f06916ad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ANIMALS/.idea/ANIMALS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ANIMALS/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ANIMALS/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ANIMALS/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ANIMALS/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ANIMALS/animal.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ANIMALS/animal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ANIMALS/perro.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ANIMALS/perro.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TiendaDepartamental/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TIENDADEPARTMENTAL/Producto.h" beforeDir="false" afterPath="$PROJECT_DIR$/../TIENDADEPARTMENTAL/Producto.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
@@ -50,23 +60,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/raman/Documents/GitHub/PracticasCompuI/triangulo/triangulo.h",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/raman/Documents/GitHub/PracticasCompuI/triangulo/triangulo.h&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="triangulo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="triangulo" TARGET_NAME="triangulo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="triangulo" RUN_TARGET_NAME="triangulo">
       <method v="2">
@@ -87,7 +97,9 @@
       <workItem from="1692721304498" duration="1136000" />
       <workItem from="1692723762072" duration="58000" />
       <workItem from="1692724115282" duration="72000" />
-      <workItem from="1692724188498" duration="383000" />
+      <workItem from="1692724188498" duration="982000" />
+      <workItem from="1692725734087" duration="491000" />
+      <workItem from="1692896499567" duration="1833000" />
     </task>
     <servers />
   </component>

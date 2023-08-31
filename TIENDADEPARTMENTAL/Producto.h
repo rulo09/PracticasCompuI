@@ -15,8 +15,10 @@ private:
     int barras[4];
 
 public:
+    Producto(float p,string n, int id[]);
     void setCompra(float precio, string nombre, int barras[]);
     void setInventario(int inventario);
+    
 };
 
 
